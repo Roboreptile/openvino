@@ -354,6 +354,7 @@ std::string NameFromType(const Type type) {
         CASE(CumSum);
         CASE(DetectionOutput);
         CASE(ExperimentalDetectronDetectionOutput);
+        CASE(Identity);
         CASE(If);
         CASE(LogSoftmax);
         CASE(TopK);
