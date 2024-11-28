@@ -191,7 +191,7 @@ static const TypeToNameMap& get_type_to_name_tbl() {
         {"Atan", Type::Math},
         {"Atanh", Type::Math},
         {"Ceil", Type::Math},
-        {"Ceiling", Type::Math},
+        {"Ceiling", Type::Eltwise},
         {"Cos", Type::Math},
         {"Cosh", Type::Math},
         {"Floor", Type::Eltwise},
@@ -369,6 +369,7 @@ std::string NameFromType(const Type type) {
         CASE(ExperimentalDetectronPriorGridGenerator);
         CASE(ExperimentalDetectronGenerateProposalsSingleImage);
         CASE(GenerateProposals);
+        CASE(Identity);
         CASE(Inverse);
         CASE(ExtractImagePatches);
         CASE(NonMaxSuppression);
@@ -421,6 +422,7 @@ std::string algToString(const Algorithm alg) {
         CASE(EltwiseSubtract);
         CASE(EltwiseDivide);
         CASE(EltwiseFloor);
+        CASE(EltwiseCeiling);
         CASE(EltwiseFloorMod);
         CASE(EltwiseMod);
         CASE(EltwiseMaximum);

@@ -166,6 +166,7 @@ enum class Algorithm {
     EltwiseSubtract,
     EltwiseDivide,
     EltwiseFloor,
+    EltwiseCeiling,
     EltwiseFloorMod,
     EltwiseMod,
     EltwiseMaximum,
